@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MWHomeScreen">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.NoActionBar"/>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_mwhome_screen" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/colorPrimaryDark"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="55dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:text=" "
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/cardBar"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@+id/cardTitle"
+                app:layout_constraintBottom_toTopOf="@+id/cardContent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/cardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="15dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/cardBar"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/cardBar2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@+id/cardContent"
+                app:layout_constraintBottom_toTopOf="@+id/cardImage"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/cardImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="15dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="15dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/cardBar2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/completeBtn"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="4dp"
+                android:text="Complete"
+                android:textSize="14sp"
+                android:background="@drawable/pill"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

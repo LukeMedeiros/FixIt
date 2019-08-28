@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "198907693556",
+    "firebase_url": "https://fixit-8ef86.firebaseio.com",
+    "project_id": "fixit-8ef86",
+    "storage_bucket": "fixit-8ef86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198907693556:android:99cfa6c8a2880aff",
+        "android_client_info": {
+          "package_name": "com.honeywell.fixit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198907693556-nn4m9uj0n1nq2536rrqrr0ekji32srf9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgm0bZfM735nC2ni72n51F1FjhnGg7hiY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
